@@ -1,0 +1,13 @@
+.alien{
+    background: url('/assets/spriteSheet.png');
+    width: 500px;
+    height: 700px;
+    background-position: 0 0;
+    animation-timing-function: step-start;
+	animation-iteration-count: infinite;
+}
+@for $i from 0 through 1{
+    .alien-#{$i+1}{
+        background-position: -($i*500px) 0;
+    }
+}

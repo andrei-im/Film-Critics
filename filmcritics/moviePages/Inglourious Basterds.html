@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inglourious Basterds</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+</head>
+<body>
+        <header>
+            <div class="topnav">
+                <a href="../index.html">Home</a>
+                <a href="../movielist.html">Movie List</a>
+                <a href="../bookmarks.html">Bookmarks</a>
+                <a href="../about.html">About</a>
+              </div>
+        </header>
+        <p id="test">Film Critics</p>
+
+        <div>
+            <h1>
+                Inglourious Basterds <span>2009</span>
+            </h1>
+            <h2 id="rating">10/10</h2>
+            
+            <div style="float: left; margin-right: 12px" ><img src="../assets/Inglourious%20Basterds.jpg" alt="Inglourious Basterds" width="300" height="450"/></div>
+            <div class="toggle">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox"
+                         class="custom-control-input"
+                         id="toggleSwitches">
+                  <label class="custom-control-label"
+                         for="toggleSwitches">
+                    BOOKMARK</label>
+                </div>
+            </div>
+            <p id="genre">genre</p>
+            <p id="director">genre</p>
+            <p id="duration">genre</p>
+            <p id="stars">genre</p>
+            <p id="description">This is the best movie reviews website you will ever find. All of our ratings are top notch, no one rates like us, and by us I mean me.</p>
+        </div> 
+        
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="//cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
+        <script>
+            $.get("../data/movies.json", function(data){
+                //console.log(data);
+                drawData(data);
+                //writeTable(data);
+                
+            });
+            function drawData(obj){
+                let movieObj = obj["Inglourious Basterds"];
+                const desc = document.getElementById("description");
+                desc.innerText = `Description: ${movieObj[6].description}`;
+
+                const name = document.getElementById("name");
+                desc.innerText = `Description: ${movieObj[6].description}`;
+
+                const rating = document.getElementById("rating");
+                rating.innerText = `Rating: ${movieObj[0].rating}`;
+
+                const genre = document.getElementById("genre");
+                genre.innerText = `Genre: ${movieObj[3].genre}`;
+
+                const director = document.getElementById("director");
+                director.innerText = `Director: ${movieObj[4].director}`;
+
+                const duration = document.getElementById("duration");
+                duration.innerText = `Duration: ${movieObj[2].duration}`;
+
+                const stars = document.getElementById("stars");
+                stars.innerText = `Stars: ${movieObj[5].stars}`;
+
+            }
+            
+
+            const cb = document.querySelector('#toggleSwitches');
+            if (sessionStorage.length > 1)
+            {
+                if (sessionStorage.getItem("movie6") != null)
+                {
+                    cb.checked = true;
+                }
+                else{
+                    cb.checked = false;
+                }
+            }
+            console.log(cb.checked);
+            function setBookmark() {
+            console.log(cb.checked);
+            if (cb.checked)
+            {
+                sessionStorage.setItem("movie6", "Inglourious Basterds");
+            }
+            else{
+                sessionStorage.removeItem("movie6");
+            }
+            }
+            document.querySelector('#toggleSwitches').addEventListener('click', setBookmark);
+        </script>
+</body>
+</html>

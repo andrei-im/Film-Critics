@@ -1,0 +1,112 @@
+{
+    "Fight Club":
+    [
+        {"name":"Fight Club"},
+        {"rating":"95/100"},
+        {"date":"1999"},
+        {"duration":"2h 19m"},
+        {"genre":"Drama"},
+        {"director":"David Fincher"},
+        {"stars":"Brad Pitt, Edward Norton"},
+        {"description":"A depressed man (Edward Norton) suffering from insomnia meets a strange soap salesman named Tyler Durden (Brad Pitt) and soon finds himself living in his squalid house after his perfect apartment is destroyed. The two bored men form an underground club with strict rules and fight other men who are fed up with their mundane lives. Their perfect partnership frays when Marla (Helena Bonham Carter), a fellow support group crasher, attracts Tyler's attention."}
+    ],
+    "In a Valley of Violence":
+    [
+        {"name":"In a Valley of Violence"},
+        {"rating":"85/100"},
+        {"date":"2016"},
+        {"duration":"1h 44m"},
+        {"genre":"Western"},
+        {"director":"Ti West"},
+        {"stars":"Ethan Hawke, John Travolta"},
+        {"description":"A mysterious drifter (Ethan Hawke) and his dog journey toward Mexico through the barren desert of the Old West. Hoping to shorten their trip, they cut through a large valley, landing in the forgotten town of Denton -- a place now known as a valley of violence. The once-popular mining town is nearly abandoned and controlled by a group of misfits and nitwits, including the seemingly untouchable Gilly (James Ransone), the troublemaking son of the town's difficult marshal."}
+    ],
+    "Mad Max: Fury Road":
+    [
+        {"name":"Mad Max: Fury Road"},
+        {"rating":"80/100"},
+        {"date":"2015"},
+        {"duration":"2h 0m"},
+        {"genre":"Action/Adventure"},
+        {"director":"George Miller"},
+        {"stars":"Tom Hardy, Charlize Theron"},
+        {"description":"Years after the collapse of civilization, the tyrannical Immortan Joe enslaves apocalypse survivors inside the desert fortress the Citadel. When the warrior Imperator Furiosa (Charlize Theron) leads the despot's five wives in a daring escape, she forges an alliance with Max Rockatansky (Tom Hardy), a loner and former captive. Fortified in the massive, armored truck the War Rig, they try to outrun the ruthless warlord and his henchmen in a deadly high-speed chase through the Wasteland."}
+    ],
+    "Kung Fu Hustle":
+    [
+        {"name":"Kung Fu Hustle"},
+        {"rating":"86/100"},
+        {"date":"2004"},
+        {"duration":"1h 39m"},
+        {"genre":"Action/Comedy"},
+        {"director":"Stephen Chow"},
+        {"stars":"Stephen Chow, Wah Yuen"},
+        {"description":"When the hapless Sing (Stephen Chow) and his dim-witted pal, Bone (Feng Xiaogang), try to scam the residents of Pig Sty Alley into thinking they're members of the dreaded Axe Gang, the real gangsters descend on this Shanghai slum to restore their fearsome reputation. What gang leader Brother Sum (Danny Chan) doesn't know is that three legendary retired kung fu masters (Yu Xing, Dong Zhihua, Chiu Chi-ling) live anonymously in this decrepit neighborhood and don't take kindly to interlopers."}
+    ],
+    "Old Henry":
+    [
+        {"name":"Old Henry"},
+        {"rating":"90/100"},
+        {"date":"2021"},
+        {"duration":"1h 39m"},
+        {"genre":"Western/Action"},
+        {"director":"Potsy Ponciroli"},
+        {"stars":"Tim Blake Nelson, Scott Haze"},
+        {"description":"Old Henry is an action-Western about a widowed farmer and his son who warily take in a mysterious, injured man with a satchel of cash. When a posse of men claiming to be the law come for the money, the farmer must decide whom to trust. Defending against a siege of his homestead, he reveals a talent for gunslinging that surprises everyone, calling his true identity into question."}
+    ],
+    "Inglourious Basterds":
+    [
+        {"name":"Inglourious Basterds"},
+        {"rating":"90/100"},
+        {"date":"2009"},
+        {"duration":"2h 32m"},
+        {"genre":"Adventure/War"},
+        {"director":"Quentin Tarantino"},
+        {"stars":"Brad Pitt, Diane Kruger"},
+        {"description":"It is the first year of Germany's occupation of France. Allied officer Lt. Aldo Raine (Brad Pitt) assembles a team of Jewish soldiers to commit violent acts of retribution against the Nazis, including the taking of their scalps. He and his men join forces with Bridget von Hammersmark, a German actress and undercover agent, to bring down the leaders of the Third Reich. Their fates converge with theater owner Shosanna Dreyfus, who seeks to avenge the Nazis' execution of her family."}
+    ],
+    "Fantastic Beasts: The Crimes of Grindelwald":
+    [
+        {"name":"Fantastic Beasts: The Crimes of Grindelwald"},
+        {"rating":"65/100"},
+        {"date":"2018"},
+        {"duration":"2h 14m"},
+        {"genre":"Fantasy/Adventure"},
+        {"director":"David Yates"},
+        {"stars":"Eddie Redmayne, Katherine Waterston"},
+        {"description":"In an effort to thwart Grindelwald's plans of raising pure-blood wizards to rule over all non-magical beings, Albus Dumbledore enlists his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead. Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world.In an effort to thwart Grindelwald's plans of raising pure-blood wizards to rule over all non-magical beings, Albus Dumbledore enlists his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead. Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world."}
+    ],
+    "Joker":
+    [
+        {"name":"Joker"},
+        {"rating":"80/100"},
+        {"date":"2019"},
+        {"duration":"2h 02m"},
+        {"genre":"Crime/Drama"},
+        {"director":"Todd Phillips"},
+        {"stars":"Joaquin Phoenix, Robert De Niro"},
+        {"description":"Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City. Arthur wears two masks -- the one he paints for his day job as a clown, and the guise he projects in a futile attempt to feel like he's part of the world around him. Isolated, bullied and disregarded by society, Fleck begins a slow descent into madness as he transforms into the criminal mastermind known as the Joker."}
+    ],
+    "The Batman":
+    [
+        {"name":"The Batman"},
+        {"rating":"80/100"},
+        {"date":"2022"},
+        {"duration":"2h 56m"},
+        {"genre":"Action/Adventure"},
+        {"director":"Matt Reeves"},
+        {"stars":"Robert Pattinson, Zoe Kravitz"},
+        {"description":"Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the perpetrator's plans become clear, he must forge new relationships, unmask the culprit and bring justice to the abuse of power and corruption that has long plagued the metropolis."}
+    ],
+    "Ip Man":
+    [
+        {"name":"Ip Man"},
+        {"rating":"85/100"},
+        {"date":"2008"},
+        {"duration":"1h 46m"},
+        {"genre":"Action/Biography"},
+        {"director":"Wilson Yip"},
+        {"stars":"Donnie Yen, Simon Yam"},
+        {"description":"During the Japanese invasion of China, a wealthy martial artist is forced to leave his home when his city is occupied. With little means of providing for themselves, Ip Man and the remaining members of the city must find a way to survive."}
+    ]
+}

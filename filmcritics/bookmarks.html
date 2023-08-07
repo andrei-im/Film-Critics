@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <header>
+            <div class="topnav">
+                <a href="./index.html">Home</a>
+                <a href="./movielist.html">Movie List</a>
+                <a class="active" href="./bookmarks.html">Bookmarks</a>
+                <a href="./about.html">About</a>
+              </div>
+        </header>
+
+        <h1>
+            Bookmarks <span>(only until you close the browser)</span>
+        </h1>
+
+        <div class="classList">
+        <ul id="list">
+        </ul>
+        </div>
+        <script>
+            const tb = document.getElementById("list");
+
+            if(Object.keys(sessionStorage) != 0){
+                let movieArray = [];
+                for(let i = 1; i < sessionStorage.length; i++)
+                {
+                    for (let j = 1; j <= 10; j++){
+                    const movieKey = `movie${j}`;
+                    if (!(movieArray.includes(movieKey)))
+                    {
+                        if (sessionStorage.getItem(movieKey) != null)
+                        {
+                            const key = sessionStorage.getItem(movieKey);
+                            const tr = document.createElement("tr");
+                            tr.innerHTML = `<li> <img src="./assets/${key}.jpg" width="50" height="80"/> <a href="./moviePages/${key}.html">${key}</a></li>`;
+                            tb.append(tr);
+                        }
+                        movieArray.push(movieKey);
+                    }
+                }
+                }
+            }
+            else
+            {
+                const tr = document.createElement("tr");
+                tr.innerHTML = `<li >No bookmarks yet</li>`;
+                tb.append(tr);
+            }
+        </script>
+</body>
+</html>

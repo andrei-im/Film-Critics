@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.0/css/jquery.dataTables.min.css">
+</head>
+<body>
+        <header>
+            <div class="topnav">
+                <a href="./index.html">Home</a>
+                <a class="active" href="./movielist.html">Movie List</a>
+                <a href="./bookmarks.html">Bookmarks</a>
+                <a href="./about.html">About</a>
+              </div>
+        </header>
+        <p id="test">Film Critics</p>
+
+        <div class="movieTable">
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>Cover</th>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Director</th>
+                        <th>Genre</th>
+                    </tr>
+                </thead>
+                <tbody id="myData">
+                </tbody>
+            </table>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="//cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"></script>
+        <script>
+            $.get("./data/movies.json", function(data){
+                drawData(data);
+                
+            });
+            function drawData(obj){
+                const tb = document.getElementById("myData");
+                var i = 0;
+                for (let key in obj) {
+                    let value = obj[key];
+                    var currMovie = key.toString();
+                    let path = `./assets/${key.toString()}.jpg`
+                    let img = new Image(500, 300);
+                    img.src = path;
+                    
+                    const tr = document.createElement("tr");
+                    tr.innerHTML = `<td><img src="${path}" width="100" height="150"/></td><td> <a href="./moviePages/${currMovie}.html">${currMovie}</a></td><td>${value[0].rating}</td><td>${value[4].director}</td><td>${value[3].genre}</td>`;
+                    tb.append(tr);
+                    
+                    i++;
+                }
+                $('#myTable').DataTable();
+            }
+            
+        </script>
+</body>
+</html>

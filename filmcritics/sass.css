@@ -1,0 +1,18 @@
+.alien {
+  background: url("/assets/spriteSheet.png");
+  width: 500px;
+  height: 700px;
+  background-position: 0 0;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.alien-1 {
+  background-position: 0px 0;
+}
+
+.alien-2 {
+  background-position: -500px 0;
+}/*# sourceMappingURL=sass.css.map */
